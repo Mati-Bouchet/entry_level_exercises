@@ -2,10 +2,10 @@
 
 word_list = input("Please insert a list of words: ").split()
 
-vowels = ["a", "e", "i", "o", "u"]
 
 def words_with_two_vowels(list_input):
     def count_vowels(word):
+        vowels = ["a", "e", "i", "o", "u"]
         count = 0
         for i in word:
             if i.lower() in vowels:
