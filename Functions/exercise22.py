@@ -6,11 +6,11 @@ people = [
 {"name": "Linda", "age": 31},
 ]
 
-def get_oldest_perdon(people_list):
+def get_oldest_person(people_list):
     def get_age(age):
         return age["age"]
     oldest_person = max(people_list, key = get_age)
     return oldest_person["name"]
 
-result = get_oldest_perdon(people)
+result = get_oldest_person(people)
 print(result)
